@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*global tag */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85);
+}
+
+span {
+    font: size 0.9rem;
+    color: #757373;
+
+}
+
+h6 {
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+/*navigation*/
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #1C4A73;
+    /* Background color of the nav bar */
+    padding: 1vw 4vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(35, 56, 88);
+    justify-content: space-between;
+
+}
+
+nav img {
+    cursor: pointer;
+}
+
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+    margin-left: 30px;
+
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #F7941E;
+}
+
+
+
+/*home*/
+#home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url(/images/banner1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 0px;
+
+}
+
+#home h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#home a.blue {
+    color: #fff;
+    background-color: #F7941E;
+    transition: 0.3s ease;
+}
+
+#home a.blue:hover {
+    color: #A4C639;
+    background-color: #fff;
+}
+
+#home a.yellow {
+    color: #fff;
+    background-color: #A4C639;
+    transition: 0.3s ease;
+}
+
+#home a.yellow:hover {
+    color: #F7941E;
+    background-color: #fff;
+}
+/*--features
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    display: flex;
+    gap: 12rem;
+}
+
+#features .fea-box{
+    background-color: #c4c4ce;
+    text-align: start;
+    height: 10%;
+}
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44,44,80);
+}
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46,46,59);
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70,87);
+}--*/
+/* Features Section */
+#features {
+    padding: 2rem;
+    background-color:  #E6F1FA;
+    text-align: center;
+    max-width: 100%;
+    margin-top: 50px;
+}
+
+#features h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#features p {
+    font-size: 1rem;
+    color: #666666;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fea-base {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.fea-box {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.fea-box i {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
+.fea-box h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.fea-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/*--course
+#course{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat( minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+    
+}
+#course .course{
+    text-align: start;
+    background-color: #F9F9FF;
+    height: 100%;
+}
+#course .course img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#course .course .details{
+    padding: 15px 15px 0 15px;
+}
+#course .course .details i{
+    font-size: 0.9rem;
+    color:#FDC93B ;
+}--*/
+/* Course Section */
+#Course {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#Course h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#Course p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.course-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+#course {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+#course img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.details {
+    padding: 1rem 0;
+}
+
+.details span {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.details h6 {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin: 0.5rem 0;
+}
+
+.star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star i {
+    color: #ffc107;
+    margin: 0 0.1rem;
+}
+
+.star span {
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+/*--Registrations--*/
+#registration {
+    padding: 6vw 10vw 6vw 10vw; /* Corrected padding syntax */
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url(/images/library.avif);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+#registration .reminder {
+    color: #f9f9f9;
+    margin-right: 50px; /* Adds space to the right of .reminder */
+}
+
+#registration .reminder h1 {
+    color: #f9f9f9;
+}
+
+#registration .reminder p {
+    color: #f9f9f9;
+}
+
+#registration .form {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#registration .form .btn{
+    margin-top: 20px;
+}
+
+#registration .form input {
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+#registration .form input::placeholder{
+    color: #302d2d;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#registration .form a.yellow {
+    color: #fff;
+    background-color: #FDC93B;
+    transition: 0.3s ease;
+    display: inline-block; /* Allows padding and margins to work */
+    background-color: #ffcc00; /* Yellow background color */
+    color: #ffffff; /* White text color */
+    padding: 12px 24px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+
+#registration .form a.yellow:hover {
+    color: #fff;
+    background-color: #A4C639;
+}
+#registration .form .Yellow:active {
+    background-color: #cc9900; /* Darker background on click */
+}
+/*--teachers--*/
+.teachers {
+    background-color: #f5f5f5; /* Light gray background for the section */
+    padding: 40px 20px; /* Padding around the section */
+    text-align: center; /* Center-align text */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 100px;
+}
+
+.teachers h1 {
+    font-size: 2.5em; /* Large font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark gray text color */
+}
+
+.teachers p {
+    font-size: 1.2em; /* Slightly larger than normal paragraph text */
+    margin-bottom: 30px; /* Space below the paragraph */
+    color: #666; /* Medium gray text color */
+}
+
+.teachers-box {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Space between the profiles */
+    flex-wrap: wrap; /* Wrap items onto new lines as needed */
+}
+
+.profile {
+    background-color: #fff; /* White background for each profile */
+    padding: 20px; /* Padding inside each profile */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 200px; /* Maximum width for each profile */
+    text-align: center; /* Center-align text within each profile */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.profile img {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 15px; /* Space below the images */
+}
+
+.profile h5 {
+    font-size: 1.2em; /* Font size for names */
+    color: #333; /* Dark gray text color */
+}
+
+.profile:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+/*footer*/
+
+.footer {
+    background-color: #1C4A73; /* Dark blue background */
+    width: 100%;
+    height: 100%;
+     /* White text color */
+    padding: 60px 40px; /* Padding for the footer */
+    font-size: 0.9em; /* Slightly smaller font size */
+    margin-top: 0px;
+    
+    
+}
+
+
+.footer-container {
+    display: flex; /* Flexbox layout for container */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space between items */
+    max-width: 1200px; /* Max width for container */
+    margin: 0 auto; /* Center align container */
+    padding-bottom: 20px; /* Padding at the bottom */
+    border-bottom: 1px solid #cccccc; /* Light border for subtle separation */
+}
+
+.footer-about, .footer-contact, .footer-social {
+    flex: 1; /* Equal space for each section */
+    margin-bottom: 20px; /* Margin at the bottom */
+    min-width: 200px;
+    margin-left: 10%; /* Minimum width for sections */
+    color: white;
+}
+
+.footer h3 {
+    font-size: 1.5em; /* Heading font size */
+    margin-bottom: 15px; /* Margin below heading */
+    color: #ffffff; /* Maroon color for headings */
+}
+
+.footer-about p, .footer-container a {
+    color: white; 
+    line-height: 1.6; 
+}
+
+.footer a:hover {
+    color: #F7941E; /* Maroon hover color for links */
+    text-decoration: none; /* No underline */
+}
+
+.footer-social a {
+    display: inline-block; /* Inline block for icons */
+    margin-right: 10px; /* Margin between icons */
+    font-size: 1.2em; /* Icon size */
+    transition: color 0.3s; /* Transition for hover effect */
+    color: #E0E0E0; /* Default icon color */
+}
+
+.footer-social a:hover {
+    color: #F7941E; /* Maroon hover color for icons */
+}
+
+
+.footer-bottom {
+    text-align: center; /* Center align text */
+    padding-top: 20px; /* Padding at the top */
+    font-size: 0.8em; /* Smaller font size */
+    color: white; /* Medium gray for footer bottom */
+}
+
